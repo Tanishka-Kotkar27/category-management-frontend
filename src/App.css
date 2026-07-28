@@ -224,3 +224,88 @@ body {
 .modal-box-wide {
   width: 520px;
 }
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.filter-bar select {
+  padding: 6px 10px;
+  border: 1px solid #d7d9de;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.order-item-line {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #92720b;
+}
+
+.status-shipped {
+  background-color: #cfe2ff;
+  color: #084298;
+}
+
+.status-delivered {
+  background-color: #e6f7ed;
+  color: #157347;
+}
+
+.status-cancelled {
+  background-color: #f1f2f4;
+  color: #6b7280;
+}
+
+.cart-builder {
+  margin-bottom: 12px;
+}
+
+.cart-builder label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.cart-builder .form-row select {
+  flex: 2;
+  padding: 10px 12px;
+  border: 1px solid #d7d9de;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.cart-builder .form-row input {
+  padding: 10px 12px;
+  border: 1px solid #d7d9de;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eef0f3;
+  text-align: left;
+}
+
+.text-muted {
+  color: #9ca3af;
+  font-size: 13px;
+}

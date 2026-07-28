@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CategoryDashboard from "./components/CategoryDashboard";
 import ProductDashboard from "./components/ProductDashboard";
+import OrderDashboard from "./components/OrderDashboard";
 import "./App.css";
 
 function App() {
@@ -21,9 +22,17 @@ function App() {
         >
           Products
         </button>
+        <button
+          className={`tab-btn ${activeTab === "orders" ? "tab-active" : ""}`}
+          onClick={() => setActiveTab("orders")}
+        >
+          Orders
+        </button>
       </div>
 
-      {activeTab === "categories" ? <CategoryDashboard /> : <ProductDashboard />}
+      {activeTab === "categories" && <CategoryDashboard />}
+      {activeTab === "products" && <ProductDashboard />}
+      {activeTab === "orders" && <OrderDashboard />}
     </div>
   );
 }
