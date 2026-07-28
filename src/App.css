@@ -276,19 +276,37 @@ body {
   display: block;
 }
 
+.cart-builder .form-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .cart-builder .form-row select {
-  flex: 2;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
   padding: 10px 12px;
   border: 1px solid #d7d9de;
   border-radius: 6px;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 .cart-builder .form-row input {
-  padding: 10px 12px;
+  flex: 0 0 70px;
+  width: 70px;
+  padding: 10px 8px;
   border: 1px solid #d7d9de;
   border-radius: 6px;
   font-size: 14px;
+  box-sizing: border-box;
+}
+
+.cart-builder .form-row button {
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .cart-table {
