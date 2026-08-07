@@ -335,3 +335,53 @@ body {
   color: #9ca3af;
   font-size: 13px;
 }
+
+.order-preview {
+  background: #f8f9fb;
+  border: 1px solid #eef0f3;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.order-preview-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.order-preview-line:last-child {
+  margin-bottom: 0;
+}
+
+.order-preview-line span:first-child {
+  color: #6b7280;
+}
+
+.mono-text {
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.payment-status-pending {
+  background-color: #fff3cd;
+  color: #92720b;
+}
+
+.payment-status-paid {
+  background-color: #e6f7ed;
+  color: #157347;
+}
+
+.payment-status-failed {
+  background-color: #fdecea;
+  color: #b02a37;
+}
+
+.payment-status-refunded {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
