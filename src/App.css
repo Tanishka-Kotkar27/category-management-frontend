@@ -385,3 +385,56 @@ body {
   background-color: #e0e7ff;
   color: #4338ca;
 }
+
+
+.cart-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-group-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: 16px 18px;
+}
+
+.cart-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-group-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cart-group-total {
+  font-weight: 700;
+  color: #4f46e5;
+  font-size: 15px;
+}
+
+.qty-stepper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-stepper button {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-stepper span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
