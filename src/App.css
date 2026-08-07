@@ -438,3 +438,108 @@ body {
   text-align: center;
   font-weight: 600;
 }
+
+.shipping-tools-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.cost-calculator-card,
+.track-shipment-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: 18px 20px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.cost-calculator-card h3,
+.track-shipment-card h3 {
+  margin: 0 0 14px 0;
+  font-size: 15px;
+}
+
+.cost-result {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #f0f4ff;
+  border-radius: 8px;
+}
+
+.cost-result-amount {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.cost-result-breakdown {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.track-form-row {
+  display: flex;
+  gap: 8px;
+}
+
+.track-form-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #d7d9de;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.track-result {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #f8f9fb;
+  border-radius: 8px;
+}
+
+.track-result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.track-result-row span:first-child {
+  color: #6b7280;
+}
+
+.inline-edit-input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #d7d9de;
+  border-radius: 4px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.shipping-status-pending {
+  background-color: #fff3cd;
+  color: #92720b;
+}
+
+.shipping-status-shipped {
+  background-color: #cfe2ff;
+  color: #084298;
+}
+
+.shipping-status-in_transit {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.shipping-status-delivered {
+  background-color: #e6f7ed;
+  color: #157347;
+}
