@@ -5,6 +5,7 @@ import OrderDashboard from "./components/OrderDashboard";
 import CustomerDashboard from "./components/CustomerDashboard";
 import PaymentDashboard from "./components/PaymentDashboard";
 import CartDashboard from "./components/CartDashboard";
+import WishlistDashboard from "./components/WishlistDashboard";
 import "./App.css";
 
 function App() {
@@ -49,6 +50,12 @@ function App() {
         >
           Carts
         </button>
+        <button
+          className={`tab-btn ${activeTab === "wishlist" ? "tab-active" : ""}`}
+          onClick={() => setActiveTab("wishlist")}
+        >
+          Wishlist
+        </button>
       </div>
 
       {activeTab === "categories" && <CategoryDashboard />}
@@ -57,6 +64,7 @@ function App() {
       {activeTab === "customers" && <CustomerDashboard />}
       {activeTab === "payments" && <PaymentDashboard />}
       {activeTab === "cart" && <CartDashboard />}
+      {activeTab === "wishlist" && <WishlistDashboard />}
     </div>
   );
 }
