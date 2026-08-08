@@ -7,6 +7,7 @@ import PaymentDashboard from "./components/PaymentDashboard";
 import CartDashboard from "./components/CartDashboard";
 import WishlistDashboard from "./components/WishlistDashboard";
 import ShippingDashboard from "./components/ShippingDashboard";
+import ReviewDashboard from "./components/ReviewDashboard";
 import "./App.css";
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
         <button className={`tab-btn ${activeTab === "shipping" ? "tab-active" : ""}`} onClick={() => setActiveTab("shipping")}>
           Shipping
         </button>
+        <button className={`tab-btn ${activeTab === "reviews" ? "tab-active" : ""}`} onClick={() => setActiveTab("reviews")}>
+          Reviews
+        </button>
       </div>
 
       {activeTab === "categories" && <CategoryDashboard />}
@@ -49,6 +53,7 @@ function App() {
       {activeTab === "cart" && <CartDashboard />}
       {activeTab === "wishlist" && <WishlistDashboard />}
       {activeTab === "shipping" && <ShippingDashboard />}
+      {activeTab === "reviews" && <ReviewDashboard />}
     </div>
   );
 }
